@@ -9,5 +9,6 @@ class Strings{
 		String s2 = "Object Oriented Programming Language";
 		System.out.println(compare(s1,s2));
 		// commented
+		// commented twice
 	}
 }
