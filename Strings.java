@@ -8,5 +8,6 @@ class Strings{
 		String s1 = "Object OrientEd Programming Language";
 		String s2 = "Object Oriented Programming Language";
 		System.out.println(compare(s1,s2));
+		// commented
 	}
 }
