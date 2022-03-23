@@ -1,0 +1,38 @@
+import java.util.*;
+class Main{
+    
+    static int sum(int[][] ages,int r,int c,int x){
+        int count=0;
+        for(int i=0;i<r;i++){
+            int sum=0;
+            for(int j=0;j<c;j++){
+                sum+=ages[i][j];
+            }
+            int avg = sum/c;
+            if(avg>x){
+                count++;
+            }
+        }
+        return count;
+    }
+    
+    public static void main(String [] s){
+        Scanner sc =new Scanner(System.in);
+        
+        
+        int r = sc.nextInt();
+        int c = sc.nextInt();
+        int [][] ages = new int[r][c];
+        
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                ages[i][j] = sc.nextInt();
+            }
+        }
+        int x =sc.nextInt();
+        int count = sum(ages,r,c,x);
+        System.out.println(count);
+        
+        
+    }
+}
